@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dilsh\\ISTA220\\Roulette\\Roulette\\Roulette.csproj",
+      "projectUniqueName": "C:\\Users\\dilsh\\source\\repos\\Roulette\\Roulette\\Roulette.csproj",
       "projectName": "Roulette",
-      "projectPath": "C:\\Users\\dilsh\\ISTA220\\Roulette\\Roulette\\Roulette.csproj",
+      "projectPath": "C:\\Users\\dilsh\\source\\repos\\Roulette\\Roulette\\Roulette.csproj",
       "packagesPath": "C:\\Users\\dilsh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dilsh\\ISTA220\\Roulette\\Roulette\\obj\\",
+      "outputPath": "C:\\Users\\dilsh\\source\\repos\\Roulette\\Roulette\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

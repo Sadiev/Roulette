@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 
 namespace Roulette
@@ -41,15 +42,15 @@ namespace Roulette
                 Screen.Print(110, Console.CursorTop + 1, new string(' ', 25));
             }
             Console.SetCursorPosition(110, 2);
-            //foreach (var bet in Global.Bets.Select(x => new { x.BetType, x.BetAmount }).Distinct())
-            //{
-            //    Screen.Print(110, Console.CursorTop + 1, $"Pleced {bet.BetAmount} on {bet.BetType}");
-            //}
-            foreach (var bet in Global.Bets)
+            foreach (var bet in Global.Bets.Select(x => new { x.BetType, x.BetAmount }).Distinct())
             {
-                Console.SetCursorPosition(110, Console.CursorTop + 1);
-                Console.Write($"Pleced {bet.BetAmount} on {bet.BetType} - {bet.BetNumber}");
+                Screen.Print(110, Console.CursorTop + 1, $"Pleced {bet.BetAmount} on {bet.BetType}");
             }
+            //foreach (var bet in Global.Bets)
+            //{
+            //    Console.SetCursorPosition(110, Console.CursorTop + 1);
+            //    Console.Write($"Pleced {bet.BetAmount} on {bet.BetType} - {bet.BetNumber}");
+            //}
         }
         
         public void PrintBetsTable()
